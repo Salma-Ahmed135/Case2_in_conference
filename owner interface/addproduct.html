@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/addproduct.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>addproduct</title>
+</head>
+<body>
+   <div class="forrrm">
+    <div class="container">
+        <h1 class="title">Add Product</h1>
+        <form class="form">
+            <div class="user-info">
+                <div class="input-box" >
+                    <label class="label" for="name">Name</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter  Name" required>
+                </div>
+                <div class="input-box">
+                    <label class="label" for="photo">Image</label>
+                    <input class="input" type="file" name="fname" id="photo" placeholder="photo" required>
+                </div>
+                <div class="input-box">
+                    <label class="label" for="Wholesaller">Wholesaller-Price</label>
+                    <input class="input" type="number" id="Price" name="price" placeholder="Enter Price" >
+                </div>
+                <div class="input-box">
+                    <label class="label" for="retailer">Retailer-Price</label>
+                    <input class="input" type="number" id="Price" name="price" placeholder="Enter Price" >
+                </div>
+                <div class="box">
+                    <label class="size" for="size">Size</label>
+                    <form>
+                        <input id="sm" class="checkbox" type="checkbox"  name="size-1" value="small" >
+                        <label for="sm" class="labelsize" for="size">Small</label>
+                        <input id="med" class="checkbox" type="checkbox"  name="size-2" value="medium" >
+                        <label for="med" class="labelsize" for="size">Medium</label>
+                        <input id="lar" class="checkbox" type="checkbox"  name="size-3" value="large" >
+                        <label for="lar" class="labelsize" for="size">large</label>
+                        <input id="xl" class="checkbox" type="checkbox"  name="size-4" value="x-large" >
+                        <label for="xl" class="labelsize" for="size">X-large</label>
+                    </form>
+                </div>
+                <div class="input-box">
+                    <label class="label" for="description">Description</label>
+                    <input class="input" type="text" id="description" name="description" placeholder="Enter description" required>
+                </div>
+                <div class="input-box">
+                    <label class="label" for="quantity">Quantity</label>
+                    <input class="input" type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+                </div>
+                <!-- <div class="input-box">
+                    <label class="label" for="Category">Category</label>
+                    <select name="currency" >
+                        <option value="dollar">dollar</option>
+                        <option value="EGP">EGP</option>
+                        <option value="Euro">Uore</option></select>
+                </div> -->
+
+                <div class="">
+                    <button class="submitbutton" type="submit"  value="Submit">Submit</button>
+                </div>
+              
+            </div>
+        </form>
+    </div>
+   </div>
+</body>
+</html>

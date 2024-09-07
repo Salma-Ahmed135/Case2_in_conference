@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition:.2s linear;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+/* LANDING  START*/
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    background: #ffe6ac;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#7f552b ;
+    clip-path: circle(50% at bottom right);
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container .text{
+    position: relative;
+    margin-right: 20px;
+    /* flex: 1 1 40rem; */
+} 
+.container .text h1{
+    color: #7f552b;
+    font-size: 55px;
+    /* background-color: #7f552b; */
+}
+.container span{
+    color: #f9d200;
+    background-color: #7f552b;
+} 
+
+.text h2{
+    color:transparent;
+    font-size: 60px;
+    -webkit-text-stroke: 1px #7f552b;
+    background: url(../imgs/blob-scene-haikei\ \(3\).png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 25s linear infinite;
+    font-weight: 900;
+    padding-top: 20px;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+
+}
+.text p{
+    font-size: 18px;
+    color: #7f552b;
+    padding-top: 20px;
+
+}
+.contbtn{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* margin-left: 80px; */
+    /* justify-content: center; */
+}
+.text a{
+    background-color: #f9d200;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    height: 50px;
+    width: 150px;
+    border-radius: 15PX;
+    flex-wrap: wrap;
+    place-items: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 1px 2px 3px #454545;
+    text-transform: uppercase;
+    
+}
+.text a:hover{
+    border:  solid 1px #f9d200;
+    background-color:transparent;
+    color: black;
+    transform: scale(1.1);
+    transition: all 0.4s;
+   
+}
+.text h3{
+    font-size: 45px;  
+}
+
+
+.imgbox{
+  z-index: 1;
+  position: absolute;
+  right: -350px;
+  /* padding-top: 100px; */
+  
+  /* align-items: end; */
+ 
+  /* flex: 1 1 40rem; */
+}
+.imgbox img{
+    width: 50%;
+}
+.imgbox img:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+/* .img-cont{
+    display: inline-block;
+} */
+
+
+@media screen and (max-width:1000px) and (min-width:768px) {
+.imgbox{
+   display: none;
+   
+}
+
+}
+
+/* Large Phone land */
+@media screen and (max-width:767px) and (min-width:601px) {
+    .text p{
+        color: #454545;
+    }
+
+}
+/* Small Phone */
+@media screen and (max-width:600px)
+
+{
+    section{
+        height: auto;
+        padding-left: 25px;
+    }
+    .imgbox img{
+        display: none;
+       
+    }
+    .text p{
+        color: #454545;
+    }
+    .imgbox{
+        padding-left: 100px;
+    }
+    
+}
+
+@media(max-width:900px){
+.text h2{
+    font-size: 40px;
+}
+.container .text h1{
+    font-size: 30px;
+}
+.text p{
+    font-size: 15px;
+}
+.imgbox{
+    display: none;
+}
+.text p{
+    color: #454545;
+}
+
+}
+@media(max-width:400px){
+    .container .text h1{
+        font-size: 15px;
+    }
+    .text h2{
+        /* font-size: 20px; */
+        font-weight: 500;
+}
+}
+/* LANDING END */

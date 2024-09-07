@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/Add-category.css">
+    <!--start font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--end font-->
+    <title>Add-category</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-logo"> <i class="fa-solid fa-image"></i></div>
+            <span class="logo_name">Sou2 Maser</span>
+        </div>
+        <div class="menue-items">
+            <ul class="nav-links">
+                <li><a href="./admin panel.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-name">Dash Board</span>
+                </a></li>
+                <li><a href="./Add-store-owner.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="link-name">Add Store</span>
+                </a></li>
+                <li><a href="./Add-category.html">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span class="link-name">Add Category</span>
+                </a></li>
+                <li><a href="./admins table.html">
+                    <i class="fa-solid fa-people-group"></i>
+                    <span class="link-name">Admins</span>
+                </a></li>
+                <li><a href="./add-admin.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span class="link-name">Add Admin</span>
+                </a></li>
+                <!-- <li><a href="#">
+                    <i class="fa-solid fa-share"></i>
+                    <span class="link-name">Dash Board</span>
+                </a></li> -->
+            </ul>
+            <ul class="logout-mode">
+                <li><button type="submit">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="link-name">Logout</span>
+                </button></li>
+
+                <li class="mode">
+                 <a href="#">
+                    <i class="fa-solid fa-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                 </a>
+                 <div class="mode-toggle">
+                   <span class="switch"></span>
+                 </div>
+               </li>
+            </ul>
+        </div>
+    </nav>
+    <!--start form-->
+    <div class="add-category">
+        <div class="category-container">
+            <h1 class="title">Add Category</h1>
+            <form class="category">
+                <div class="user-info">
+                    <div class="input-box">
+                        <label class="label" for="name">Category Name</label>
+                        <input class="input" type="text" id="categoryname" name="category" placeholder="Category Name" required>
+                     </div>
+                     <!-- <div class="input-box">
+                        <label class="label" for="image">Category Image</label>
+                        <div class="file"><input class="input" type="file" name="fname" id="photo" placeholder="Your Image" required></div>
+                        < <input class="input" type="text" id="image" name="image" placeholder="Enter Your Image" required> 
+                    </div> -->
+                    <div class="submitbutton1">
+                        <button class="submitbutton" type="submit"  value="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <!--end form-->
+        </div>
+       </div>
+    <script src="js/addcategory.js"></script>
+</body>
+</html>
